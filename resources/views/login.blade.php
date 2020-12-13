@@ -3,11 +3,12 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-4 login-box m-auto mt-5 mb-5">
-        <form>
+        <form action="login" method="POST">
     <h4>Login</h4>
     <div class="form-group mb-3">
+    @csrf
         <label for="useremail" class="mb-2">Email Address</label>
-        <input class="form-control" name="username" type="email" id="useremail" placeholder="Enter Your Email Here">
+        <input class="form-control" name="email" type="email" id="useremail" placeholder="Enter Your Email Here">
     </div>
     <div class="form-group mb-3">
         <label for="userpassword" class="mb-2">Password</label>
